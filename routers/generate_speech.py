@@ -18,7 +18,7 @@ class TextToSpeechRequest(BaseModel):
 
 @router.post("/")
 async def text_to_speech(request: TextToSpeechRequest):
-    client = InferenceClient(model='facebook/fastspeech2-en-200_speaker-cv4',
+    client = InferenceClient(model='facebook/hf-seamless-m4t-large',
                              token=os.getenv('HUGGINGFACEHUB_API_KEY'))
 
     try:

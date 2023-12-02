@@ -2,16 +2,12 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from huggingface_hub import InferenceClient
 import os
-from dotenv import load_dotenv
-from pathlib import Path
 from io import BytesIO
 from starlette.responses import StreamingResponse
 
-load_dotenv()
-
 router = APIRouter(
     prefix="/generate-image",
-    tags=['Generate image']
+    tags=['Text to Image']
 )
 
 
@@ -46,7 +42,16 @@ async def generate_image(request: ImageRequest):
         image.save(img_byte_arr, format='PNG')
         img_byte_arr.seek(0)
 
-        return StreamingResponse(img_byte_arr, media_type="image/png")
+        # Create a filename from the first few characters of the text
+        safe_filename = "".join(char if char.isalnum() or char == ' ' else '' for char in request.prompt[:100])
+        safe_filename = safe_filename.replace(' ', '_')
+        filename = f"{safe_filename}.png" if safe_filename else "image.png"
+
+        return StreamingResponse(
+            img_byte_arr,
+            media_type="image/png",
+            headers={"Content-Disposition": f"attachment; filename={filename}"}
+        )
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

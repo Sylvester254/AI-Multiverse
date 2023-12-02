@@ -11,3 +11,5 @@ huggingface_hub
 pillow
 
 starlette~=0.27.0
+requests~=2.31.0
+ipython~=8.18.1

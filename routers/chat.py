@@ -2,13 +2,12 @@ from fastapi import APIRouter
 from langchain.llms import HuggingFaceHub
 from pydantic import BaseModel
 import os
-from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import ConversationChain
 
 router = APIRouter(
     prefix="/chat",
-    tags=['Chat']
+    tags=['Chat with AI']
 )
 
 

@@ -1,0 +1,13 @@
+fastapi~=0.104.1
+uvicorn
+sqlalchemy
+langchain~=0.0.340
+langserve
+python-dotenv~=1.0.0
+openai
+sse_starlette
+pydantic==1.10.13
+huggingface_hub
+pillow
+
+starlette~=0.27.0

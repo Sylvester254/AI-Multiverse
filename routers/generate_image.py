@@ -23,7 +23,7 @@ class ImageRequest(BaseModel):
 
 @router.post("/")
 async def generate_image(request: ImageRequest):
-    client = InferenceClient(model='stabilityai/stable-diffusion-2-1', token=os.getenv('HUGGINGFACEHUB_API_KEY'))
+    client = InferenceClient(model='stablediffusionapi/realistic-vision-v51', token=os.getenv('HUGGINGFACEHUB_API_KEY'))
 
     try:
         # Generate the image

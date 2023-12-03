@@ -40,7 +40,7 @@ curl -X 'POST' \
 
 ![beautiful_cyberpunk_female_image](/tti-images/beautiful_pale_cyberpunk_female.png)
 
-### text to image models:
+## Text To Image models:
 > [stabilityai/stable-diffusion-2-1](https://huggingface.co/stabilityai/stable-diffusion-2-1)
 * Developed by: Robin Rombach, Patrick Esser
 * Model type: Diffusion-based text-to-image generation model
@@ -85,7 +85,7 @@ _model:stablediffusionapi/newrealityxl-global-nsfw_
 ![portrait_photo_of_muscular_bearded_guy](/tti-images/portrait_photo_of_muscular_bearded_guy.png)
 _model:stablediffusionapi/realistic-vision-v51_
 
-### text to speech models:
+## Text To Speech models:
 
 > [facebook/mms-tts-eng](https://huggingface.co/facebook/mms-tts-eng)
 - Massively Multilingual Speech (MMS): English Text-to-Speech
@@ -103,7 +103,10 @@ _model:stablediffusionapi/realistic-vision-v51_
 ```
 - Output:
 
-[Audio facebook-mms-tts-eng](/tts-audio/Im_doing_well_thank_you_facebook-mms-tts-eng.mp3)
+<audio controls>
+  <source src="tts-audio/Im_doing_well_thank_you_facebook-mms-tts-eng.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ---
 > [facebook/mms-tts-swh](https://huggingface.co/facebook/mms-tts-swh)
@@ -121,7 +124,10 @@ _model:stablediffusionapi/realistic-vision-v51_
 ```
 - Output:
 
- [Audio facebook-mms-tts-swh](/tts-audio/Siku_moja_walipokuwa_wanapita-facebook-mms-tts-swh.mp3)
+<audio controls>
+  <source src="tts-audio/Siku_moja_walipokuwa_wanapita-facebook-mms-tts-swh.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ---
 > [facebook/fastspeech2-en-ljspeech](https://huggingface.co/facebook/fastspeech2-en-ljspeech):
@@ -139,7 +145,10 @@ _model:stablediffusionapi/realistic-vision-v51_
 ```
 - Output:
 
-[Audio facebook-fastspeech2-en-ljspeech](/tts-audio/Im_doing_well_thank_you_for_facebook-fastspeech2-en-ljspeech.mp3)
+<audio controls>
+  <source src="tts-audio/Im_doing_well_thank_you_for_facebook-fastspeech2-en-ljspeech.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ---
 > [Voicemod/fastspeech2-en-male1](https://huggingface.co/Voicemod/fastspeech2-en-male1)
@@ -157,7 +166,10 @@ _model:stablediffusionapi/realistic-vision-v51_
 ```
 - Output:
 
-[Audio Voicemod-fastspeech2-en-male1](/tts-audio/Im_doing_well_thank_you_for_askingVoicemod-fastspeech2-en-male1.mp3)
+<audio controls>
+  <source src="tts-audio/Im_doing_well_thank_you_for_askingVoicemod-fastspeech2-en-male1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ---
 > [espnet/english_male_ryanspeech_fastspeech2](https://huggingface.co/espnet/english_male_ryanspeech_fastspeech2)
@@ -173,4 +185,7 @@ _model:stablediffusionapi/realistic-vision-v51_
 ```
 - Output:
 
-[Audio espnet-english_male_ryanspeech_fastspeech2](/tts-audio/Im_doing_well_thank_you_for_espnet-english_male_ryanspeech_fastspeech2.mp3)
+<audio controls>
+  <source src="tts-audio/Im_doing_well_thank_you_for_espnet-english_male_ryanspeech_fastspeech2.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
